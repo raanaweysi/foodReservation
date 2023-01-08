@@ -23,7 +23,6 @@ const App = (props) => {
   return (
     
       <CartProvider>
-        onClose: {handelCartHiden}
       {cartIsShown && <Cart onClose={handelCartHiden}/>}
       <Header onShown={handelCartShown}/>
       <MealSummery/>
